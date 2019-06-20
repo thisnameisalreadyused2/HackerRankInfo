@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {% if title %}
+        <title>{{ title }} - HackerRank Info</title>
+        {% else %}
+        <title>Welcome to HackerRank.info!</title>
+        {% endif %}
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    </head>
+    <body>
+        <h1>Index page</h1>
+    </body>
+</html>
