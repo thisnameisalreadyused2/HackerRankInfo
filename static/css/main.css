@@ -8,15 +8,20 @@ body {
     text-align: center;
 }
 
-input {
-  width: 20%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  box-sizing: border-box;
-}
-
 .new_team {
 	margin-top: 10%;
+}
+
+.title {
+	font:bold 48pt "Trebuchet MS";
+	text-align: center;
+	color: #6C7;
+	letter-spacing: -2px;
+}
+
+.title span {
+	font-weight: normal;
+	color: #BBB;
 }
 
 .button {
@@ -25,7 +30,7 @@ input {
 	color: #0C5;
 	font-weight: 300;
 	padding: 20px 5px;
-	width: 220px;
+	width: 360px;
 	height:30px;
 	background: #0D6;
 	border: 1px solid #0D6;
@@ -33,6 +38,7 @@ input {
 	text-decoration: none;
 	position: relative;
 	top: 50px;
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
 .button:hover,
@@ -41,4 +47,16 @@ input {
 	color: #0C5;
 	border-color: #0C5;
 	background: #FFF;
+}
+
+.form_field {
+	width: 360px;
+	background: #fff;
+	color: #a3a3a3;
+	font: inherit;
+	box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+	border: 0;
+	outline: 0;
+	padding: 22px 18px;
+	margin: 8px 0;
 }
