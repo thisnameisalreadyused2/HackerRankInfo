@@ -5,8 +5,12 @@
 		<h1 class="title">HackerRank<span>.Info</span></h1>
 
 		<form action="#">
-		  	<input class="form_field" type="email" placeholder="Coach E-mail address" name="email" value=""><br>
-		  	<input class="form_field" type="text" placeholder="Team name" name="team_name" value=""><br>
+		  	<input class="form_field" type="email" placeholder="Coach E-mail address" name="email"
+				   required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" value=""><br>
+		  	<input class="form_field" type="text" placeholder="Team name" name="team_name"
+				   required pattern="[a-zA-Z0-9 а-яА-ЯіІїЇ]" minlength="2" maxlength="30" size="30" value=""><br>
+			<input class="form_field" type="password" placeholder="Password" name="password"
+				   required autocomplete="on" maxlength="24" size="24" value=""><br>
 			<a href="#" class="button">Create Team</a>
 		</form>
 
