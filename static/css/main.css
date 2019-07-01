@@ -9,8 +9,14 @@ body {
 
 .new_team {
   margin-top: 10%;
+  z-index: 0;
 }
 
+.notifications {
+  z-index: 1;
+}
+
+/* Title */
 .title {
   font: bold 48pt "Trebuchet MS";
   text-align: center;
@@ -23,6 +29,7 @@ body {
   color: #bbb;
 }
 
+/* Form Fields */
 .form_field {
   background: #fff;
   color: #a3a3a3;
@@ -34,6 +41,7 @@ body {
   margin: 8px 0;
 }
 
+/* Create Team Button */
 .button {
   background: #0d6;
   color: #fff;
@@ -56,6 +64,7 @@ body {
   text-decoration: none;
 }
 
+/* Adaptability */
 @media only screen and (max-width: 480px) {
   body {
     font-size: 15px;

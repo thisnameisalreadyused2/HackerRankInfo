@@ -1,0 +1,104 @@
+{% extends "dashboard-base.html" %}
+
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <a class="navbar-brand title" href="#">
+    <img src="/static/images/logo.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+    HackerRank<span>.Info</span>
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Add User</button>
+    </form>
+  </div>
+
+</nav>
+
+<div class="container">
+
+  <div class="chart-wrapper">
+    <div class="chart-title">
+      Cell Title
+    </div>
+
+    <div class="chart-stage">
+      <canvas id="myChart">
+
+      </canvas>
+    </div>
+
+    <div class="chart-notes">
+      Notes about this chart
+    </div>
+
+  </div>
+</div>
+
+
+<!--
+    <div class="container">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="./">HackerRank<span>.Info</span></a>
+            </div>
+            <div class="navbar-collapse">
+                <ul class="navbar-nav nav main-nav">
+                    <li><a href="https://keen.io">Home</a></li>
+                </ul>
+            </div>
+            <button type="button" class="button">Add User</button>
+        </div>
+    </div>
+
+    <div class="container grid">
+        <div class="grid-hero">
+            <div class="hero chart-wrapper">
+
+                <div class="chart-title">
+                    Cell Title
+                </div>
+
+                <div class="chart-stage">
+                    <div id="grid-1-1">
+                        <img data-src="">
+                    </div>
+                </div>
+
+                <div class="chart-notes">
+                    Notes about this chart
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <p class="small text-muted">Built with &#9829; by
+            <a href="https://github.com/Yeami">Yeami</a> and
+            <a href="https://github.com/BoberMod">BoberMod</a>
+        </p>
+    </div>
+-->
+{% endblock %}

@@ -1,7 +1,14 @@
 {% extends "base.html" %}
 
 {% block content %}
+	<div class="notifications">
+		{% if info_message %}
+			
+		{% endif %}
+	</div>
+
     <div class="new_team">
+
 		<h1 class="title">HackerRank<span>.Info</span></h1>
 
 		<form action="#">
@@ -13,5 +20,6 @@
 				   required autocomplete="on" maxlength="24" size="24" value=""><br>
 			<a href="#" class="button">Create Team</a>
 		</form>
+
 	</div>
 {% endblock %}
