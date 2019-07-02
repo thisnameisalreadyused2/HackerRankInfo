@@ -10,7 +10,7 @@ def index_html():
 
 @app.route('/dashboard')
 def dashboard_html():
-    return render_template('dashboard.html')
+    return render_template('dashboard.html', name="New Team Name", password="32143")
 
 
 if __name__ == '__main__':
