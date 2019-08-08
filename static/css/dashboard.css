@@ -1,0 +1,57 @@
+@import url(https://fonts.googleapis.com/css?family=Nunito:300);
+
+.title {
+  color: #6c7 !important;
+}
+
+.title span {
+  font-weight: normal;
+  color: #bbb;
+}
+
+.dashboard {
+  font-family: "Nunito", sans-serif;
+  background: #f2f2f2;
+}
+
+.dashboard .chart-wrapper {
+  background: #fff;
+  border: 1px solid #e2e2e2;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.dashboard .chart-wrapper .chart-title {
+  border-bottom: 1px solid #d7d7d7;
+  color: #666;
+  font-size: 24px;
+  font-weight: 200;
+  padding: 7px 10px 4px;
+}
+
+.dashboard .chart-wrapper .chart-title {
+  border-bottom: 1px solid #d7d7d7;
+  color: #666;
+  font-size: 24px;
+  font-weight: 200;
+  padding: 7px 10px 4px;
+}
+
+.dashboard .chart-wrapper .chart-stage {
+  overflow: hidden;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.dashboard .chart-wrapper .chart-notes {
+  background: #fbfbfb;
+  border-top: 1px solid #e2e2e2;
+  color: #808080;
+  font-size: 20px;
+  padding: 8px 10px 5px;
+}
+
+.dashboard .chart-stage .chart-title {
+  border: medium none;
+}

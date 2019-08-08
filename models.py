@@ -1,10 +1,12 @@
 from datetime import datetime
+from sqlalchemy_serializer import SerializerMixin
 
 from app import db
 
 
-class Team(db.Model):
+class Team(db.Model, SerializerMixin):
     id = db.Column(db.Integer, primary_key=True)
+    url = db.Column(db.String(38), index=True, unique=True)
     name = db.Column(db.String(30), index=True)
     password = db.Column(db.String(24))
 
@@ -12,8 +14,8 @@ class Team(db.Model):
         return '<Team {}:{}>'.format(self.name, self.id)
 
 
-class User(db.Model):
-    id = db.Column(db.Integer, index=True ,primary_key=True)
+class User(db.Model, SerializerMixin):
+    id = db.Column(db.Integer, index=True, primary_key=True)
     name = db.Column(db.String(12), index=True)
     total_score = db.Column(db.Integer)
     team_id = db.Column(db.Integer, db.ForeignKey('team.id'))
@@ -22,7 +24,7 @@ class User(db.Model):
         return '<User {}:{}>'.format(self.name, self.id)
 
 
-class StatSlice(db.Model):
+class StatSlice(db.Model, SerializerMixin):
     id = db.Column(db.Integer, primary_key=True)
     user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
     timestamp = db.Column(db.DateTime, index=True, default=datetime.utcnow)
@@ -31,7 +33,7 @@ class StatSlice(db.Model):
         return '<StatSlice {}:{}>'.format(self.id, self.user_id)
 
 
-class StatRecord(db.Model):
+class StatRecord(db.Model, SerializerMixin):
     id = db.Column(db.Integer, primary_key=True)
     skill_id = db.Column(db.Integer, db.ForeignKey('skill.id'))
     skill_level = db.Column(db.Integer)
@@ -41,7 +43,7 @@ class StatRecord(db.Model):
         return '<StatRecord {}:{}>'.format(self.skill_id, self.skill_level)
 
 
-class Statistics(db.Model):
+class Statistics(db.Model, SerializerMixin):
     id = db.Column(db.Integer, primary_key=True)
     skill_id = db.Column(db.Integer)
     skill_level = db.Column(db.Integer)
@@ -56,7 +58,7 @@ class Statistics(db.Model):
         return '<Global stat {}>'.format(self.id)
 
 
-class Skill(db.Model):
+class Skill(db.Model, SerializerMixin):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(30), index=True)
     slug = db.Column(db.String(20), index=True)
